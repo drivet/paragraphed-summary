@@ -26,7 +26,11 @@ def extract_summary(instance):
         if word_count >= max_word_count:
             break
     if summary:
-        instance._summary = summary
+        if hasattr(instance, 'default_status'):
+            instance.metadata['summary'] = summary
+        else:
+            instance._summary = summary
+        instance.has_summary = True
 
 
 def count_words(soup):
