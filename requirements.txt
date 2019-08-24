@@ -18,6 +18,7 @@ jedi==0.15.1
 Jinja2==2.10.1
 MarkupSafe==1.1.1
 mccabe==0.6.1
+paragraphed-summary=1.0.0
 parso==0.5.1
 pelican==4.1.0
 pkginfo==1.5.0.1
