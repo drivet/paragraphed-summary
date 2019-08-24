@@ -13,7 +13,8 @@ from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = 'paragraphed-summary'
-DESCRIPTION = 'A pelican plugin to extract summaries in paragraphs'
+DESCRIPTION = 'A pelican plugin to extract summaries from articles in ' + \
+              'units of whole paragraphs'
 URL = 'https://github.com/drivet/paragraphed-summary'
 EMAIL = 'desmond.rivet@gmail.com'
 AUTHOR = 'Desmond Rivet'
@@ -27,7 +28,8 @@ REQUIRED = [
 
 # What packages are optional?
 EXTRAS = {
-    'dev': ['jedi', 'rope', 'flake8', 'autopep8', 'yapf', 'black']
+    'dev': ['twine', 'invoke', 'jedi', 'rope',
+            'flake8', 'autopep8', 'yapf', 'black']
 }
 
 # The rest you shouldn't have to touch too much :)
